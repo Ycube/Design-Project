@@ -26,7 +26,7 @@ for (var i = 0; i < 10; i++) {
   }, i * 100)
 }
 
-//i should equate to 10 every time because of the settimeout
+//i should console log to 10 every time because of the settimeout and closure
 
 //IV.  Write a function that calculates the nth term in the fibonacci sequence, where this sequence is defined as a series of numbers (0 1 1 2 3 5 8 13 ...), and where the sum of any term is the result of adding the previous two terms. Note: make sure that your solution can calculate larger terms (n > 30)!
 
