@@ -1,0 +1,55 @@
+.container {
+  display: flex; 
+  flex-flow: row wrap;
+  justify-content: center;
+}
+/* Notes: The flex CSS property is a shorthand property specifying the ability of a flex item to alter its dimensions to fill available space. Flex items can be stretched to use available space proportional to their flex grow factor or their flex shrink factor to prevent overflow.*/
+/*
+Answer: I like this one as it allows a defined container for other elements on the page to sit inside. It's also great that there is row wrap to help define when the browser gets smaller it allows elements to wrap over. I'm not a fan of the justify-content: center since it might push elements together. 
+*/
+
+.card {
+  padding: 1em;
+  width: calc(25% - 4em - 2px); 
+  border: 1px solid black;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 2em;
+}
+/* 
+Answer: I like the border around specific elements and it can be used nicely but very situational for when a border is needed. Having spacing on the margin again is situational because there were some images where they were too big for the element and the image did not fit inside the card class. I like the calc idea because it can help create a more responsive app.
+*/
+
+@media (max-width: 500px) { 
+  .card {
+    width: 100%;
+  }
+}
+/* Notes: media query with constrains of max width being 500px, once the width is less than 500px, it will now use constrains below*/
+/* 
+Answer: This is great for helping designing for mobile applications to predefined certain constraints when the browser is thin at 500px. However I would like if there were perhaps more constraints on the class card or other elements too.
+ */
+
+h1 { 
+  text-decoration: underline; 
+}
+/*
+Answer: First impression I do not like this because, if there were a lot of h1 tags on the page, it would create a lot of unnecessary underlining. However I could see that there might be situational uses for wanting specific h1 tags to be underlined and perhaps later in the css have more restrictions on the h1 tags.
+*/
+
+.card__description {
+  font-size: 1.5rem; 
+}
+/*Notes: EMs are relative to their parent's font size
+REMs are relative to a base font-size
+This is important when intermediate containers change font sizes. Child elements with EMs will be affected, those using REMs will not.*/
+/*
+Answer: 
+This one is a bit more unique because its constrains only work on font sizes relative to the base font. I haven't worked with enough CSS to see how this would or would not become useful. I have not formulated an opinion as I would like more experience with CSS to come across this situation.
+*/
+
+
+
+
+/*Overall, the css style doesn't look very nice on mobile, however I can see some advantages to certain styling sheets. Currently if I had to say yes to any of these, the only one I would agree with is the container css*/
+
